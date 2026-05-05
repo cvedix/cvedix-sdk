@@ -1,0 +1,22 @@
+# Build artifacts
+build/
+*.o
+*.d
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Node modules (MCP server)
+mcp/node_modules/
+mcp/build/
+mcp/.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
