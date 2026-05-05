@@ -1,5 +1,9 @@
 # CVEDIX SDK — AI Video Analytics Development Kit
 
+<div align="center">
+  <img src="assets/cvedix_sdk_architecture.png" alt="CVEDIX SDK Architecture" width="800"/>
+</div>
+
 > Build real-time AI video analytics pipelines without touching the core runtime source code.
 
 ---
