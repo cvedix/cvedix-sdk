@@ -35,6 +35,10 @@ export const NODE_CATALOG: NodeInfo[] = [
     description: "Face recognition (SFace/FaceNet) with embedding matching",
     constructor: `cvedix_face_recognizer_node(name, model, db_path)`,
     example: `auto rec = std::make_shared<cvedix_nodes::cvedix_face_recognizer_node>("rec", "sface.onnx", "./face_db/");` },
+  { name: "cvedix_milvus_face_search_node", category: "inference", header: "nodes/infers/cvedix_milvus_face_search_node.h",
+    description: "Large-scale face search via Milvus vector database (100M+ faces, HNSW index). Requires -DCVEDIX_WITH_MILVUS=ON and running Milvus server.",
+    constructor: `cvedix_milvus_face_search_node(name, milvus_uri, collection, dimension, threshold, top_k, metric)`,
+    example: `auto search = std::make_shared<cvedix_nodes::cvedix_milvus_face_search_node>("search", "localhost:19530", "cvedix_faces", 1024, 0.70f);` },
   // ── Tracking ──
   { name: "cvedix_track_node", category: "tracking", header: "nodes/track/cvedix_track_node.h",
     description: "ByteTrack multi-object tracker",
